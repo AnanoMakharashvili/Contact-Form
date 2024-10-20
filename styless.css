@@ -96,3 +96,56 @@ body {
   font-size: 20px;
   border: none;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 65px;
+  }
+  .main {
+    width: 690px;
+  }
+
+  .header {
+    margin-left: -10px;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .first-last-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  #first-name {
+    padding: 12px 73px;
+  }
+
+  #last-name {
+    padding: 12px 73px;
+  }
+
+  .query-type {
+    transform: translate(-235px, 7px);
+  }
+
+  .radio-group {
+    flex-direction: row;
+  }
+
+  .general-support {
+    padding: 12px 72px;
+  }
+
+  #message {
+    padding: 81px 220px;
+  }
+
+  .checkbox-container {
+    margin-left: -247px;
+  }
+
+  .button {
+    padding: 16px 267px;
+  }
+}
