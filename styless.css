@@ -15,6 +15,17 @@ body {
   padding: 37px;
 }
 
+#message-sent {
+  background-color: #2a4144;
+  color: white;
+  font-weight: 400;
+  padding: 25px;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+  display: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -65,8 +76,27 @@ body {
   padding: 12px 24px;
 }
 
+#error-message {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #d73c3c;
+  display: none;
+}
+
 .query-type {
   transform: translate(-48px, 10px);
+}
+
+#error-message-query {
+  transform: translate(-20px, -17px);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #d73c3c;
+  display: none;
 }
 
 .radio-group {
@@ -89,6 +119,16 @@ body {
   padding: 46px 24px;
 }
 
+#error-message-checkbox {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #d73c3c;
+  transform: translate(-2px, -16px);
+  display: none;
+}
+
 .button {
   color: white;
   background-color: #0c7d69;
@@ -96,6 +136,7 @@ body {
   padding: 16px 115px;
   font-size: 20px;
   border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -128,6 +169,11 @@ body {
 
   .query-type {
     transform: translate(-235px, 7px);
+  }
+
+  #error-message-query {
+    transform: translate(-215px, -17px);
+    display: none;
   }
 
   .radio-group {
@@ -180,8 +226,22 @@ body {
     padding: 12px 73px;
   }
 
+  #error-message {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #d73c3c;
+    display: none;
+  }
+
   .query-type {
     transform: translate(-254px, 7px);
+  }
+
+  #error-message-query {
+    transform: translate(-230px, -22px);
+    display: none;
   }
 
   .radio-group {
@@ -190,6 +250,7 @@ body {
 
   .general-support {
     padding: 12px 79px;
+    cursor: pointer;
   }
 
   #message {
@@ -200,6 +261,15 @@ body {
     margin-left: -247px;
   }
 
+  #error-message-checkbox {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #d73c3c;
+    transform: translate(-133px, -15px);
+    display: none;
+  }
   .button {
     padding: 16px 279px;
   }

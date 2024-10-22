@@ -7,6 +7,13 @@
     <title>Contact Form</title>
   </head>
   <body>
+    <div id="message-sent">
+      <div>
+        <img src="assets/icon-success-check.svg" />
+        <span>Message Sent!</span>
+      </div>
+      Thanks for completing the form. We’ll be in touch soon!
+    </div>
     <div class="main">
       <header class="header">Contact Us</header>
       <form action="info">
@@ -15,15 +22,18 @@
             <div class="person">
               <label for="first-name">First Name <span>*</span></label>
               <input type="text" id="first-name" name="first-name" required />
+              <span id="error-message">This field is required</span>
             </div>
             <div class="person">
               <label for="last-name">Last Name <span>*</span></label>
               <input type="text" id="last-name" name="last-name" required />
+              <span id="error-message">This field is required</span>
             </div>
           </div>
           <div class="person">
             <label for="email">Email Address <span>*</span></label>
             <input type="email" id="email" name="email" required />
+            <span id="error-message">Please enter a valid email address</span>
           </div>
         </div>
       </form>
@@ -40,9 +50,11 @@
           <label for="support">Support Request</label>
         </div>
       </div>
+      <span id="error-message-query">Please select a query type</span>
       <form action="message-style">
         <label for="message">Message <span>*</span></label>
         <input type="text" id="message" name="message" required />
+        <span id="error-message">This field is required</span>
       </form>
 
       <div class="checkbox-container">
@@ -51,7 +63,11 @@
           >I consent to being contacted by the team <span>*</span></label
         >
       </div>
-      <button class="button">Submit</button>
+      <span id="error-message-checkbox"
+        >To submit this form, please consent to being contacted</span
+      >
+      <button class="button" id="button">Submit</button>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
