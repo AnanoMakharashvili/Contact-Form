@@ -19,6 +19,7 @@ function validateForm() {
   let isValid = true;
   if (firstNameInput.value.trim() === "") {
     errorFirst.style.display = "block";
+    errorFirst.style.color = "red";
     firstNameInput.style.border = "1px solid red";
     isValid = false;
   } else {
@@ -28,6 +29,7 @@ function validateForm() {
 
   if (lastNameInput.value.trim() === "") {
     errorLast.style.display = "block";
+    errorLast.style.color = "red";
     lastNameInput.style.border = "1px solid red";
     isValid = false;
   } else {
@@ -37,6 +39,7 @@ function validateForm() {
 
   if (!validateEmail(emailInput.value)) {
     errorEmail.style.display = "block";
+    errorEmail.style.color = "red";
     emailInput.style.border = "1px solid red";
     isValid = false;
   } else {
@@ -46,6 +49,7 @@ function validateForm() {
 
   if (messageInput.value.trim() === "") {
     errorInputMessage.style.display = "block";
+    errorInputMessage.style.color = "red";
     messageInput.style.border = "1px solid red";
     isValid = false;
   } else {
@@ -55,6 +59,7 @@ function validateForm() {
 
   if (!consentCheckbox.checked) {
     errorCheckbox.style.display = "block";
+    errorCheckbox.style.color = "red";
     isValid = false;
   } else {
     errorCheckbox.style.display = "none";
